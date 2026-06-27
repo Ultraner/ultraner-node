@@ -1,0 +1,20 @@
+{
+  "name": "@ultraner/sdk",
+  "version": "0.1.0",
+  "description": "Ultraner Node/TypeScript SDK, one API for payments across Africa (mobile money, cards, PayPal, wallets).",
+  "license": "MIT",
+  "homepage": "https://ultraner.com/ai",
+  "repository": { "type": "git", "url": "https://github.com/ultraner/ultraner-node.git" },
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["ultraner", "payments", "africa", "mobile money", "mpesa", "mtn momo", "airtel money", "stripe", "paypal"],
+  "engines": { "node": ">=18" },
+  "devDependencies": { "typescript": "^5.5.0" }
+}
